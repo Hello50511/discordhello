@@ -144,12 +144,36 @@
             text-align: center;
             color: gainsboro;
         }
+        @media (max-width:926px) {
+            h3{
+                padding: 0;
+                text-align: center;
+                animation: none;
+                padding-top: 35px;
+                padding-bottom: 35px;
+            }
+            #title_desc2,#title_h3,#img_1{
+                animation: none;
+                opacity: 1;
+            }
+            h2{
+                padding: 0;
+                padding-top: 35px;
+                padding-bottom: 35px;
+                text-align: center;
+                opacity: 1;
+            }
+        }
     </style>
 </head>
 
 <body>
     <script>
- 
+        console.log(
+            '%c잠깐만요!', 
+            'color:RED; font-size:35px;'
+        );
+        console.log('지금 뭘 하려는진 모르겠지만.. 그대로 X버튼을 눌러주세요')
         function doSomething() {
             $('#title_desc2').css({
                 'animation':'intro3 2s',
