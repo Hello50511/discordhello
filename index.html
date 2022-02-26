@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>안녕이 웹사이트</title>
+    <link rel="icon" href="av.png">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <style>
+        h1 {
+            color: white;
+            border-bottom: 1px solid black;
+            margin: 0;
+            padding: 25px;
+            border-collapse: collapse;
+            box-shadow: rgba(0,0,0,0.1);
+            /*box-shadow: 5px 5px 5px 5px gray;*/
+        }
+
+        h2 {
+            padding: 245px;
+            font-size: 50px;
+            border: 1px solid #303136;
+            background-color: #303136;
+            margin: 0;
+            border-collapse: collapse;
+            animation: intro1 2s;
+        }
+        #title1 {
+            color: #4169e1;
+        }
+
+        h2 {
+            color: white;
+        }
+        #title_desc1,#title_desc2 {
+            font-size: 20px;
+        }
+         body{
+            background-color: #303136; 
+            margin: 0;
+        } 
+        h3{
+            padding: 245px;
+            border: 1px solid white;
+            background-color: white;
+            color: black;
+            margin: 0;
+            font-size: 50px;
+            border-collapse: collapse;
+            
+        }
+        @keyframes intro1{
+            from{
+
+                opacity: 0;
+            }to{
+
+                opacity: 1;
+            }
+        }
+        @keyframes intro2{
+            from{
+                opacity: 0;
+            }to{
+                font-size: 20px;
+            }
+        }
+        @keyframes intro3{
+            from{
+                opacity: 0;
+            }to{
+                opacity: 1;
+            }
+        }
+        #title_desc2,#title_h3,#img_1{
+            opacity: 0;
+            animation-fill-mode: forwards;
+        }
+        #invite_btn{
+            padding: 15px;
+            background-color: #4169e1;
+            color: white;
+            border-radius: 5px;
+            border: 1px solid #4169e1;
+        }
+        #invite_btn:hover{
+            transform: translateY(2px);
+        }
+        #title_desc2,#title_h3{
+            display: inline;   
+        }
+        #menu{
+            width: 20px;
+            height: 20px;
+        }
+        ol{
+            color: white;
+            border-right: 1px solid white;
+            width: 120px;
+            margin: none;
+            display: none;
+            margin: 0;
+        }
+        #option_1{
+            font-size: 15px;
+            text-decoration: none;
+            color: white;
+            transform: translateY(2px);
+        }
+        #icon{
+            height: 33px;
+            padding-left: 50px;
+        }
+        #title_1{
+            text-decoration: none;
+            color: white;
+        }
+        #server_btn{
+            padding: 15px;
+            background-color: #4169e1;
+            color: white;
+            border-radius: 5px;
+            border: 1px solid #4169e1;
+        }
+        #invite_btn2{
+            padding: 15px;
+            background-color: #4169e1;
+            color: white;
+            border-radius: 5px;
+            border: 1px solid #4169e1;
+        }
+        #server_btn:hover,#invite_btn2:hover{
+            transform: translateY(2px);
+        }
+        h4{
+            text-align: center;
+            color: gainsboro;
+        }
+        #desc2{
+            text-align: center;
+            color: gainsboro;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+ 
+        function doSomething() {
+            $('#title_desc2').css({
+                'animation':'intro3 2s',
+                'animation-fill-mode': 'forwards'
+            })
+            $('#title_h3').css({
+                'animation':'intro3 2s',
+                'animation-fill-mode': 'forwards'
+            })
+            $('#img_1').css({
+                'animation':'intro3 2s',
+                'animation-fill-mode': 'forwards'
+            })
+            $('#invite_btn').css({
+                'animation':'intro3 2s',
+                'animation-fill-mode': 'forwards'
+            })
+            $('#server_btn').css({
+                'animation':'intro3 2s',
+                'animation-fill-mode': 'forwards'
+            })
+        }
+         
+        $(function () {
+         
+            $(window).scroll( function() {
+                doSomething(); 
+            });
+         
+        });
+        function invite_btn(){
+            window.location.href = "https://discord.com/api/oauth2/authorize?client_id=929174234897461248&permissions=8&scope=bot"
+        }
+        function invite_btn2(){
+            window.location.href = "https://discord.gg/TQ252yubrF"
+        }
+        function server_btn(){
+            window.location.href = "https://discord.gg/HgefkNed24"
+        }
+        </script>
+    <h1>
+        <a href="" id="title_1">
+            <img src="av.png" id="icon">안녕이
+            <a href="https://discord.com/api/oauth2/authorize?client_id=929174234897461248&permissions=8&scope=bot" id="option_1">안녕이의 봇</a>
+            <a href="https://discord.gg/TQ252yubrF" id="option_1">서버 참가</a>
+        </a>
+    </h1>
+    <h2>안녕하세요<div id="title1">안녕이 입니다.</div>
+        
+        <div id="title_desc1">저는 평범한 학생 개발자이며<br>현재는 디스코드 봇을 운영하고 있습니다 :)<br><button id="invite_btn2" onclick="invite_btn2()">안녕이 서버 참가</button></div>
+    </h2>
+    <h3>
+        <div id="title_h3">
+            디스코드 안녕봇
+        </div>
+        <br>
+        <div id="title_desc2">
+            도박,게임,출첵 등 기능이 있는 안녕봇!
+            <br>
+            <u>ㅇ도움</u> 명령어로 명령어 리스트를 보실 수 있어요!
+        </div>
+        <br>
+        <br>
+        <button id="invite_btn" onclick="invite_btn()">봇 초대하기</button>
+        <button id="server_btn" onclick="server_btn()">봇 서포트</button>
+    </h3>
+    <br><h4>Hello</h4><div id="desc2">Discord: 안녕이#5042<br>GitHub: https://github.com/Hello50511</div><br>
+</body>
+
+</html>
